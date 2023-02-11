@@ -1,0 +1,26 @@
+<Suit name="OrangeHRMApplication"parallel="tests"/>
+<Test name="chrome">
+<Parameter name="Browser"value="chrome"/>
+<classes?>
+<class name="com.Grid.OrangeHRMApplicationLoginTest"/>
+<classes>
+<Test?>
+<Test name="firefox">
+<Parameter name="Browser"Value="firefox">
+<classes>
+<class name="com.Grid.OrangeHRMApplicationLoginTest"/>
+</classes>
+</Test>
+</Suit>
+
+
+
+
+
+
+
+
+
+
+
+

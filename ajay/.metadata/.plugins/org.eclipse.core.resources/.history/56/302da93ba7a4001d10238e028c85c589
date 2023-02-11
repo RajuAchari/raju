@@ -1,0 +1,100 @@
+package step_definations;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class methodsOHRM {
+	WebDriver driver;
+	String ApplicationUrlAddress="http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login";
+	@Given("^User Should Open Chrome Browser in the System$")
+	public void user_Should_Open_Chrome_Browser_in_the_System() {
+		System.setProperty("webdriver.chrome.driver","./OrangeHRMApplication_maven/chromedriver.exe");
+		driver=new ChromeDriver();
+	    
+	}
+
+	@When("^User Enter OrangeHRM Application Url Address$")
+	public void user_Enter_OrangeHRM_Application_Url_Address()  {
+		driver.get(ApplicationUrlAddress);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	    
+	}
+
+	@Then("^User should be navigated to OrangeHRM Application LoginPage$")
+	public void user_should_be_navigated_to_OrangeHRM_Application_LoginPage() {
+		String Expected_currentUrl="http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login";
+		String Actual_currentUrl=driver.getCurrentUrl();
+		if(Actual_currentUrl.contains(Expected_currentUrl))
+		{
+			System.out.println("OHRM Url is Matched-PASS");
+		}
+		else
+		{
+			System.out.println("OHRM Url is NotMatched-FAIL");
+		}
+	    
+	}
+
+	@Then("^User should close the OrangeHRM Application and the Browser$")
+	public void user_should_close_the_OrangeHRM_Application_and_the_Browser() {
+		driver.close();
+	    
+	}@Then("^User should Enter UserName and Password and click on Login button$")
+	public void user_should_Enter_UserName_and_Password_and_click_on_Login_button() {
+		By userName=By.name("txtUsername");
+		WebElement userName1=driver.findElement(userName);
+		userName1.sendKeys("Admin");
+		By password=By.name("txtPassword");
+		WebElement password1=driver.findElement(password);
+		password1.sendKeys("Qedge123!@#");
+		By loginButton=By.className("button");
+		WebElement loginButton1=driver.findElement(loginButton);
+		loginButton1.click();
+		
+	   
+	}
+
+	@Then("^User should be navigated to OrangeHRMApplication HomePage$")
+	public void user_should_be_navigated_to_OrangeHRMApplication_HomePage() {
+		String Expected_welcomeText="Welcome Suresh";
+		String Actual_welcomeText=driver.getPageSource();
+		if(Actual_welcomeText.contains(Expected_welcomeText))
+		{
+			System.out.println("OHRM Welcome Text is Matched-PASS");
+		}
+		else
+		{
+			System.out.println("OHRM Welcome Text is NotMatched-FAIL");
+		}
+		
+	}
+
+	@Then("^User should logout from the OrangeHRMApplication$")
+	public void user_should_logout_from_the_OrangeHRMApplication() {
+		By logout=By.linkText("Logout");
+		WebElement logoutl=driver.findElement(logout);
+		logoutl.click();
+		
+		
+	}
+	@Then("^User should Enter \"([^\"]*)\" and \"([^\"]*)\" and click on Login button$")
+	public void user_should_Enter_and_and_click_on_Login_button(String UserName, String Password) {
+
+	}
+
+
+
+
+
+
+
+}

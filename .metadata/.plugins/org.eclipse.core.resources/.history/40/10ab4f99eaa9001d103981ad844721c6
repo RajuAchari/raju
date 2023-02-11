@@ -1,0 +1,45 @@
+package stepDefenations;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class OrangeHRMApplicationMethods {
+	@Given("^User Should Open Chrome Browser in the sysyem$")
+	public void user_Should_Open_Chrome_Browser_in_the_sysyem() {
+	   
+	}
+
+	@When("^User enterd OrangeHRM Application Url Address$")
+	public void user_enterd_OrangeHRM_Application_Url_Address() {
+		//http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login
+	}
+
+	@Then("^User Should be navigated to OrangeHRM Application LogIn Page$")
+	public void user_Should_be_navigated_to_OrangeHRM_Application_LogIn_Page(){
+	}
+
+	@Then("^User Should enter UserName and Password and click on LogIn button$")
+	public void user_Should_enter_UserName_and_Password_and_click_on_LogIn_button() {
+	}
+
+	@Then("^User Should be able to navigated to OrangeHRM Application HomePage$")
+	public void user_Should_be_able_to_navigated_to_OrangeHRM_Application_HomePage() {
+	}
+
+	@Then("^User Should LogOut of the OrangeHRM Application$")
+	public void user_Should_LogOut_of_the_OrangeHRM_Application() {
+	}
+
+	@Then("^User Should Close the OrangeHRM Application with the Browser$")
+	public void user_Should_Close_the_OrangeHRM_Application_with_the_Browser() {
+	}
+
+	@Then("^User Should enter \"([^\"]*)\" and \"([^\"]*)\" and click on LogIn button$")
+	public void user_Should_enter_and_and_click_on_LogIn_button(String arg1, String arg2)  {
+	  
+	}
+
+
+
+}

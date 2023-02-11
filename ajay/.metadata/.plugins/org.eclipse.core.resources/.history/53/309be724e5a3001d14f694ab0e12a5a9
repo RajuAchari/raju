@@ -1,0 +1,49 @@
+package com.orangeHRMApplicationTestCases;
+
+
+
+
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+import basetest.BaseTest;
+
+public class LoginFunctionalityTest extends BaseTest {
+	WebDriver driver;
+	Properties property;
+	String FileInputPath="C:\\Users\\rajua\\Desktop\\eclipse-workspace\\ajay\\ApplicationOrangeHrm\\src\\main\\java\\com\\OrangeHRMApplications\\com.OrangeHRMApplicationsTestDataFile";
+	String FileOutputPath="C:\\Users\\rajua\\Desktop\\eclipse-workspace\\ajay\\ApplicationOrangeHrm\\src\\main\\java\\com\\OrangeHRMApplications\\com.OrangeHRMApplicationsTestDataResultFile";
+	String Sheetname="sheet1";
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	   
+
+
+

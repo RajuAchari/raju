@@ -1,0 +1,14 @@
+<Suite name="OrangeHRMApplication" Parallel="Tests">
+<Test name="Chrome">
+<Parameter name="Browser" Value="Chrome"/>
+<Classes>
+<Class name="com.Grid.OrangeHRMApplicationLoginTest"/>
+</Classes>
+</Test>
+<Test name="Firefox">
+<Parameter name="Browser" Value="Firefox"/>
+<Classes>
+<Class name="com.Grid.orangeHRMApplicationLoginTest"/>
+</Classes>
+</Test>
+</Suite>

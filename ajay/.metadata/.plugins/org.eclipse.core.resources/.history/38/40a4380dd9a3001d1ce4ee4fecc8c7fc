@@ -1,0 +1,30 @@
+package step_definations;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class methodsOHRM {
+	@Given("^User Should Open Chrome Browser in the System$")
+	public void user_Should_Open_Chrome_Browser_in_the_System() throws Throwable {
+	    
+	}
+
+	@When("^User Enter OrangeHRM Application Url Address$")
+	public void user_Enter_OrangeHRM_Application_Url_Address() throws Throwable {
+	    
+	}
+
+	@Then("^User should be navigated to OrangeHRM Application LoginPage$")
+	public void user_should_be_navigated_to_OrangeHRM_Application_LoginPage() throws Throwable {
+	    
+	}
+
+	@Then("^User should close the OrangeHRM Application and the Browser$")
+	public void user_should_close_the_OrangeHRM_Application_and_the_Browser() throws Throwable {
+	    
+	}
+
+
+
+}

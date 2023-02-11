@@ -1,0 +1,8 @@
+package step_definations;
+	@RunWith(cucumber.class)
+	@CucumberOptions(Features="OrangeHRMApplication",give="methodsOHRM")
+	monochrome=true)
+public class TestRunner{
+	
+
+}

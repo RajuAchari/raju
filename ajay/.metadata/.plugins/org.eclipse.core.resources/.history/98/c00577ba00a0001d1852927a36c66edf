@@ -1,0 +1,17 @@
+package testdata;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.apache.poi.poifs.property.Property;
+
+public class test {
+	public void basetest() {
+		FileInputStream propertyfile;
+		Properties properties;
+		FileInputStream file=new FileInputStream(file);
+		properties=new Properties();
+		properties.load(propertyfile);
+	}
+
+}
